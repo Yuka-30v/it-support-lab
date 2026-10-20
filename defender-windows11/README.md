@@ -18,6 +18,7 @@ After creating the EICAR test file, `Get-MpThreatDetection` returned nothing. La
 **Checks**
 
 1. Confirmed Defender was running: `Get-MpComputerStatus` showed AMServiceEnabled, AntivirusEnabled and RealTimeProtectionEnabled all True, with signatures updated that day.
+
    ![Defender status](images/case08-01-status.png)
 2. Noticed the prompt was `C:\Users\yukag`, meaning PowerShell was **not** running as Administrator.
    ![Empty result in a non-elevated session](images/case08-02-empty-result.png)
